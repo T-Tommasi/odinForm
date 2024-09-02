@@ -7,48 +7,41 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="flex">
-        <div class="left container flex">
-            <div id="logo">Logo here<img src="" alt=""></div>
-        </div>
-            <div class="right container flex">
-                <div id="header">This is not a real online service! You know you need something like this in your life to help you realiza your deepest dreams.<br>
-                Sign up <strong>now</strong> to get started!</div>
-                <div class="flex body">
-                        <form class="flex">
-                            <div>
-                            <label for="name">first name:</label>
-                            <input type="text" name="name" placeholder="John" id="name">
-                            </div>
-                            <div>
-                            <label for="email">Email adress:</label>
-                            <input type="email" name="mail" placeholder="john.doe@odin.com" id="mail">
-                            </div>
-                            <div>
-                            <label for="password">Password:</label>
-                            <input type="password" name="password" id="password">
-                            </div>
-                        </form>
-                        <form action="" class="flex">
-                            <div>
-                            <label for="surname">Surname:</label>
-                            <input type="text" name="surname" id="surname">
-                            </div>
-                            <div>
-                            <label for="telephone">Telephone Number</label>
-                            <input type="tel" name="telephone" id="tel">
-                            </div>
-                            <div>
-                            <label for="passwordConfirmation">Confirm password:</label>
-                            <input type="password" name="passwordConfirmation" id="passwordConfirmation">
-                            </div>
-                        </form>
-                </div>
-                <div id="footer">Footer</div>
+    <div class="flex flexContainer">
+        <div class="leftContainer flex">
+            <div class="logoBG flex">
+                <img src="img/logo.png" alt="logo" id="logo">
+                <p class="logoText macondo-regular">Eagle corp</p>
             </div>
+        </div>
+        <div class="rightContainer flex">
+            <div class="top">
+                <p class="heroText roboto-condensed">This is the product that you always dreamed about!<br>
+                What is it? I dont know! <br>
+                But you sure as hell want it!<br>
+                <br>
+                You <u>know</u> you do</p>
+            </div>
+            <div class="middle">
+                <form action="" method="post" class="flex formContainer">
+                    <div class="flex formText">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="flex formText">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="flex formText">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </form>
+            </div>
+            <div class="bottom"></div>
         </div>
     </div>
 </body>

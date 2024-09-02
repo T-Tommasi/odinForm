@@ -7,50 +7,85 @@ body {
     margin: 0;
 }
 
+.roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.macondo-regular {
+    font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .flex {
     display: flex;
+}
+
+.flexContainer {
     align-items: center;
     justify-content: center;
-    text-align: center;
-    align-content: center;
+    padding: 0;
+    width: 100%;
+    height: 100svh;
 }
 
-.container {
-    padding: 1%;
-}
-
-.container.left {
-    width: 40%;
-    }
-
-.container.right {
-    width: 60%;
-    flex-direction: column;
-}
-
-.container.form {
-    flex-direction: column;
-    display: flex;
-    align-content: center;
+.leftContainer {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 40dvw;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.flex.container {
+.logoBG {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 25%;
+}
+
+.logoText {
+    color: black;
+    text-align: center;
+    font-size: 80px;
+}
+
+.rightContainer {
+    height: 100%;
+    width: 60dvw;
+    border-left: black 1px solid;
     flex-direction: column;
 }
 
-form.flex {
-    flex-direction: column;
-    justify-items: flex-start;
-    align-items: flex-end;
-    gap: 6px;
+.heroText{
+    font-size: 60px;
+    padding: 0 100px;
 }
 
-#header {
-    text-align: left;
-    font-family:'Times New Roman', Times, serif;
-    margin: 0px;
-    padding: 5px;
-    width: 85%;
+.formContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formText {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 10px;
+}
+
+.formText > label {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
