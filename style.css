@@ -64,11 +64,22 @@ body {
     width: 60dvw;
     border-left: black 1px solid;
     flex-direction: column;
+    padding: 100px;
+    align-items: flex-start;
 }
 
 .heroText{
     font-size: 60px;
-    padding: 0 100px;
+}
+
+.form {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.formEncouragement {
+    font-size: 30px;
 }
 
 .formContainer {
@@ -80,7 +91,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     font-size: 10px;
-    margin: 1rem;
+    margin: 0.5rem 1rem 0 0;
 }
 
 .formText > label {
@@ -93,4 +104,9 @@ body {
 .formText > input {
     width: 30rem;
     height: 2rem;
+}
+
+#submitButton {
+    width: 10rem;
+    height: 5rem;
 }
